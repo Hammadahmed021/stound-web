@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1024px)  { }
+@media only screen and (max-width: 768px)  { 
+    .text p{
+        font-size: 32px;
+    }
+    header{
+        height: auto;
+    }
+    .skill-slide .container{
+        min-height: 80vh;
+    }
+    .skill-slide{
+        min-height: 90vh;
+    }
+    
+}
+@media only screen and (max-width: 767px)  {
+    .skill-slide .container{
+        min-height: 40vh;
+    }
+    .skill-slide{
+        min-height: 70vh;
+    }
+    .skill-slide h2 , .service-section h2{
+        font-size: 5rem;
+    }
+    .work-card h2{
+        font-size: 20px !important;
+    }
+    section.footer-contact{
+        padding: 40px 0 20px 0;
+    }
+    section.footer-contact .row .col-6 {
+        max-width: 100% !important;
+        text-align: center;
+        flex: 100%;
+    }
+    section.footer-contact .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    p.copyright {
+        margin: 20px 0 0 0;
+       
+    }
+    ul.ul-links{
+        justify-content: center;
+        padding: 0;
+    }
+    .about-section{
+        width: 90vw;
+    }
+    .skill-slide .container h4 span{
+        font-size: 4vw;
+    }
+    .work-card {
+        margin: 0 0 0 50px;
+        width: 25em;
+    }
+ }
+@media only screen and (max-width: 600px) and (min-width: 400px)  {}

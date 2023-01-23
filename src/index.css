@@ -1,13 +1,564 @@
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'neue_montrealbold';
+  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+.dark-mode h1 ,.dark-mode .vertical-scroll, .dark-mode h2, .dark-mode h3, .dark-mode h4 ,.dark-mode h5, .dark-mode h6, .dark-mode p, .dark-mode span, .dark-mode a {
+  color: #222 !important;
+}
+.dark-mode h4.tech{
+  color: white !important;
+}
+.dark-mode canvas {
+  filter: invert(1);
+}
+
+.dark-mode main {
+  background-color: #ffffff;
+}
+p , li , a , h3, h4, h5, h6{
+  font-family: 'neue_montrealmedium';
+}
+
+
+/* .has-scroll-smooth [data-scroll-container] {
+  overflow-x: hidden;
+} */
+
+@font-face {
+  font-family: 'neue_montrealmedium';
+  src: url('./Assets/Fonts/neuemontreal-medium-webfont.woff2') format('woff2'),
+    url('./Assets/Fonts/neuemontreal-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_montrealbold';
+  src: url('./Assets/Fonts/neuemontreal-bold-webfont.woff2') format('woff2'),
+    url('./Assets/Fonts/neuemontreal-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section {
+  position: relative;
+
+}
+
+.soundbox {
+  display: none;
+}
+
+header {
+  /* animation: myanimation 10s infinite; */
+  /* background: rgb(0, 0, 0); */
+  position: relative;
+  height: 100vh;
+}
+
+
+@keyframes myanimation {
+  0% {
+    background-color: rgb(239, 240, 252);
+  }
+
+  20% {
+    background-color: rgb(249, 238, 247);
+  }
+
+  40% {
+    background-color: rgb(251, 237, 246);
+  }
+
+  60% {
+    background-color: rgb(238, 241, 252);
+  }
+
+  80% {
+    background-color: rgb(252, 242, 237);
+  }
+
+  100% {
+    background-color: rgb(238, 242, 252);
+  }
+}
+
+.about-section {
+  padding: 40px 0;
+  width: 80vw;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section h2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #0000000d;
+
+}
+.service-section h2 {
+  z-index: 5;
+  font-size: 8rem;
+  line-height: 1.2rem;
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+
+
+
+.about-section .about-left {
+  width: 70%;
+}
+
+.about-section .about-left {
+  position: relative;
+  z-index: 5;
+
+}
+
+.service-section p,
+.service-section h2 {
+  color:#dfd3c3;
+  z-index: 6;
+}
+
+
+
+.about-section .about-left p {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.service-section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.about-section img {
+  height: auto;
+  width: 100%;
+}
+
+.service-section {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.service-left {
+  min-height: 100vh;
+  z-index: 5;
+  width: 35%;
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-right {
+  position: absolute;
+  left: 98%;
+  min-height: 100vh;
+  /* background-color: black; */
+  padding-top: 10%;
+  /* width: 65%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+.service-left p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+.txt h2 {
+  text-align: center;
+  font-size: 60px;
+  
+  line-height: 60px;
+}
+
+.txt h2 span {
+  font-size: 40px;
+  font-family: 'neue_montrealmedium';
+
+}
+
+.txt {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.link .ul {
+  list-style: none;
+  display: flex;
+
+  opacity: 0;
+}
+
+.link .ul li {
+  margin: 0px 13px;
+}
+
+.link .ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+
+}
+
+.skill-slide {
+  min-height: 150vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto;
+}
+.skill-slide h2 {
+ 
+  position: absolute;
+  text-align: center;
+  right: 2%;
+  z-index: 5;
+  font-size: 8rem;
+  color: #dfd3c3;
+  bottom: 0%;
+}
+
+.skill-slide .container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill-slide .container h4 {
+  font-size: 32px;
+  color: black;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+
+
+ul.ul-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ul.ul-links li {
+  margin-left: 20px;
+}
+
+ul.ul-links li a {
+  font-size: 16px;
+  line-height: 1.2rem;
+  color: #dfd3c3;
+}
+
+.top-row {
+  padding-top: 20px;
+  font-family: 'neue_montrealmedium', cursive;
+}
+
+.logo  a{
+  font-size: 16px;
+  font-weight: bold;
+  color:#dfd3c3;
+  text-decoration: none;
+}
+
+.banner-text {
+  margin-top: 1%;
+  padding: 10px;
+}
+
+.text p {
+  font-size: 40px;
+  text-align: left;
+  line-height: 1.3em;
+  color: #dfd3c3;
+
+}
+
+.skill-slide .container h4 span {
+  background-color: #dfd3c3;
+  display: block;
+  padding: 1.5rem 2.5rem;
+  font-size: 5vw;
+  font-family: 'neue_montrealmedium';
+}
+.banner-text h2 {
+  font-size: 10.5vw;
+  line-height: 1.2em;
+  letter-spacing: -0.4vw;
+  color: #dfd3c3;
+  font-weight: 300;
+  position: relative;
+    
+}
+
+span.author-name {
+  position: absolute;
+  right: 2%;
+}
+.c-scrollbar_thumb {
+ 
+  background-color: #dfd3c3 !important;
+  opacity: 1 !important;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+.vertical-scroll {
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  color: #dfd3c3;
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+}
+.scrolldown {
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  bottom: 3%;
+  
+  right: 5%;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #dfd3c3 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: 0 -60px;
+  background-size: 100% 200%;
+  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
+@keyframes scrolldown {
+  0% {
+    background-position: 0 -60px;
+  }
+
+  75% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 60px;
+  }
+}
+section.footer-contact {
+  padding: 60px 0 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid;
+}
+.contact-details{
+  display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-start ;
+    padding: 0;
+}
+.footer-contact h4 {
+  font-size: 20px;
+  color: #dfd3c3;
+  line-height: 1.2em;
+}
+.footer-contact{
+  color: #dfd3c3;
+}
+.footer-contact ul li{
+  font-family: 'neue_montrealmedium';
+  font-size: 16px;
+  line-height: 1.2rem;
+}
+ul.contact-details li {
+  margin-right: 15px;
+}
+ul.contact-details li a{
+  color: #dfd3c3;
+}
+p.copyright {
+  margin: 40px 0 20px 0;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+div#tsparticles {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+}
+.work-card {
+  margin: 0 0 0 50px;
+  width: 35em;
+  position: relative;
+  height: 400px;
+  background-size: cover !important;
+  overflow: hidden;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  transition: ease 8s all;
+}
+.work-card:hover {
+  background-position: bottom !important;
+}
+.work-card h2{
+  font-size: 26px;
+    position: relative;
+    text-align: center;
+    margin:0;
+    color: #000;
+    font-family: 'neue_montrealmedium';
+    padding: 5px 0;
+}
+
+.card-ribbon {
+  font-size: 12px;
+  text-align: center;
+  color: #dfd3c3;
+  position: absolute;
+  transform: rotate(45deg);
+  right: -7%;
+    top: 3%;
+    width: 25%;
+  opacity: 0.6;
+  background-color: #000;
+}
+.card-ribbon h4.tech {
+  font-size: 12px;
+  padding: 10px;
+  margin: 0;
+}
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background: #dfd3c3;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+.work-card:hover a{
+  text-decoration-color: #000000;
+}
+#toggle {
+  width: 50px;
+  display: flex;
+  padding: 5px;
+  background-color: #222;
+  display: block;
+  border-radius: 1000px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px -10px #000;
+  transition: background-color 0.2s ease-in;
+}
+#toggle .toggle-inner {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 1000px;
+  transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
+}
+#toggle .toggle-inner.toggle-active {
+  margin-left: 20px;
+}
+
+ .dark-mode #toggle {
+	 background-color: white;
+}
+ .dark-mode #toggle .toggle-inner {
+	 background-color: #222;
+}
+.dark-mode .c-scrollbar_thumb {
+ 
+  background-color: #222 !important;
+  opacity: 1 !important;
+}
+
+.ball {
+  width: 125px;
+  height: 125px;
+  background: #2196F3;
+  border-radius: 50%;
+  border: 3px solid #1565c0;
+  box-sizing: border-box;
+  will-change: transform;
+  position: absolute;
+}
+/* .mob-work{
+  display: none;
+} */
