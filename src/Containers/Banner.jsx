@@ -65,7 +65,7 @@ const Banner = () => {
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className="container">
+          <div className="container top-header">
             <div className=" row top-row">
               <div className="col-6">
 
@@ -75,19 +75,22 @@ const Banner = () => {
 
                 <ul className="ul-links" >
                   <li><a href="mailto:Hammadahmed4015@gmail.com">Mail</a></li>
-                  <li>  <div
+                  <li>
+                    <div
                     id="toggle"
                     onClick={() => darkMode === false ? setDarkMode(true) : setDarkMode(false)}
                   >
                     <div className="toggle-inner" />
-                  </div></li>
+                    </div>
+                    
+                  </li>
                 </ul>
 
               </div>
             </div>
           </div>
 
-          <div className="banner-text"><h2><span className='author-name'>Hammad Ahmed </span><br /> <span className="banner-subtext">Frontend UI/UX and CMS developer.</span></h2></div>
+          <div className="banner-text"><h2><span className='author-name'>Hammad Ahmed </span><br /> <span className="banner-subtext">Frontend UI/UX and CMS Developer.</span></h2></div>
           <div class="scrolldown">
 
           </div>

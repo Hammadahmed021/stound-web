@@ -7,6 +7,7 @@ import hscorp from '../Assets/Images/hs-corp.png'
 import baigmetal from '../Assets/Images/baigmetal.png'
 import gorillafilm from '../Assets/Images/gorillafilm.png'
 import activesol from '../Assets/Images/activesol.png'
+import mhs from '../Assets/Images/mhs.png'
 
 
 
@@ -78,6 +79,19 @@ const Service = () => {
           <div className="card-title">
             <a href="https://hscorporation.com.pk/" target='_blank'>
               <h2>HS Corporation</h2>
+            </a>
+
+          </div>
+
+          </div>
+          <div className='work-card' style={{ background: `url(${mhs})` }}>
+          <div className="card-ribbon">
+            <h4 className="tech">Wordpress</h4>
+          </div>
+
+          <div className="card-title">
+            <a href="https://mhscollections.com/" target='_blank'>
+              <h2>MHS Collections</h2>
             </a>
 
           </div>
