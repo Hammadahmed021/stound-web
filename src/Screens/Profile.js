@@ -1,6 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useEffect, useLayoutEffect , useState } from "react";
-import { logout } from "../Components/firebase";
+import { logout , auth } from "../Components/firebase";
+
+import { useAuthState } from "react-firebase-hooks/auth";
 
 import Modal from "react-modal";
 
@@ -31,35 +33,44 @@ export default function Profile() {
   const navigate = useNavigate();
   const [modalOpen, setModalOpen] = useState(false);
   const [userData, setUserData] = useState(null);
+  const [user ] = useAuthState(auth);
   
 
 
   const LogOutMain = (e) => {
     e.preventDefault();
-
     logout();
     setTimeout(() => {
-      setModalOpen(false)
-   
-    }, 1000);
-    setTimeout(() => {
-      navigate('/');
-     
-    }, 3000);
+      setModalOpen(false)   
+    }, 1000); 
   };
 
   const getData = async () => {
     let userDataFirebse = await JSON.parse(localStorage.getItem("user"));
     setUserData(userDataFirebse)
-    console.log("profile",userDataFirebse);
+    console.log("profile",userDataFirebse );
+    
   }
 
-  useLayoutEffect( getData, []);
+  // useLayoutEffect( getData, []);
 
-  // useEffect(() => {
-  //   setUserData(localStorage.setItem('user', JSON.stringify(userData))); //changed
-  // }, [userData]);
-  // console.log(userData);
+
+  useEffect(() => {
+    getData() 
+    JSON.parse(localStorage.getItem("user"));
+    if(!user){
+        navigate('/login')
+      
+    }else{
+      navigate('/profile')
+      
+    }
+  
+    return () => {   
+    };
+  }, [user])
+
+
 
 
 

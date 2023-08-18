@@ -58,22 +58,25 @@ const checkLogin = ()=>{
   if (user){
     navigate("/profile")
    console.log("sjdbjksbdjksbdjk")
+   } else {
+    navigate("/login")
    }
 }
 
 useEffect(checkLogin,[])
 
-  useEffect(() => {
-   
-    if (loading) {
-      setTimeout(() => {
-        <Spinner />
-        
-      }, 1000);
-      return;
-    }
 
-  }, [user, loading]);
+  // useEffect(() => {
+   
+  //   if (loading) {
+  //     setTimeout(() => {
+  //       <Spinner />
+        
+  //     }, 1000);
+  //     return;
+  //   }
+
+  // }, [user, loading]);
 
   return (
     <>
@@ -104,7 +107,7 @@ useEffect(checkLogin,[])
                 <span className="emailWrap inputWrap">
                   <span class="material-symbols-outlined">mail</span>
                   <input
-                    placeholder="nabeelnaeem@gmail.com"
+                    placeholder="johnwick@gmail.com"
                     id="email-address"
                     name="email"
                     type="email"
