@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1460px) and (min-width: 1025px) {
-    .ProfileSection .login-form-wrap {
-        zoom: 80%;
-    }
+  .ProfileSection .login-form-wrap {
+    zoom: 80%;
+  }
   .footer .border-light .same-border:before {
     right: 50px;
     height: 100px;
@@ -15,6 +15,44 @@
   .footer form input#email,
   .footer form input[type="submit"] {
     height: 50px;
+  }
+  .trigger {
+    padding-top: 50px;
+  }
+  .trigger img {
+    width: 100%;
+  }
+  .featuresSection {
+    padding: 0;
+  }
+  .featuresSection .customCard,
+  .trigger .customCard {
+    zoom: 90%;
+  }
+  .featureImg {
+    width: 75%;
+  }
+  img.hq-image {
+    position: absolute;
+    width: 700px;
+    top: -100px;
+    left: -20%;
+  }
+  .insightsMain {
+    padding: 0 !important;
+  }
+  .imgDiv {
+    width: 350px;
+    height: 600px;
+  }
+  .iconsdiv img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: 1s ease-in-out;
+  }
+  .iconSection .iconSectionFirstRow {
+    padding: 40px 0 20px 0 !important;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -34,32 +72,32 @@
   }
 }
 @media only screen and (max-width: 767px) {
-    .ProfileSection .login-form-wrap .PersonalInfo .infoLabel p{
-        font-size: 14px;
-    }
-    .ProfileSection .loginHeading h2.globalHeading {
-        font-size: 22px;
-    }
-    .ProfileSection .login-form-wrap .profileCard{
-        position: relative;
-    }
-    .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit{
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-    .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit span{
-        font-size: 16px;
-    }
-    .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-    }
-    .ProfileSection .profileCard img {
-        position: relative !important;
-        width: 80px !important;
-        height: 80px;
-    }
+  .ProfileSection .login-form-wrap .PersonalInfo .infoLabel p {
+    font-size: 14px;
+  }
+  .ProfileSection .loginHeading h2.globalHeading {
+    font-size: 22px;
+  }
+  .ProfileSection .login-form-wrap .profileCard {
+    position: relative;
+  }
+  .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit span {
+    font-size: 16px;
+  }
+  .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .ProfileSection .profileCard img {
+    position: relative !important;
+    width: 80px !important;
+    height: 80px;
+  }
   .bannerClass {
     min-height: 80vh;
     margin-top: -80px;
@@ -247,16 +285,16 @@
   .highQuality-inner p {
     font-size: 14px;
   }
-  .insightsMain{
+  .insightsMain {
     height: auto;
     padding: 0;
     margin-top: 60px;
     border: none;
   }
-  .insightsMain *{
+  .insightsMain * {
     opacity: 1 !important;
   }
-  .insightsMain .col-6{
+  .insightsMain .col-6 {
     flex: 100%;
     max-width: 100%;
     padding: 0 10px !important;
@@ -265,87 +303,88 @@
     width: 300px;
     height: 600px;
     margin: auto;
-}
+  }
   .insightsRight .insightsRightInner {
     margin-top: 40px;
-}
-.imgDiv .img1 {
+  }
+  .imgDiv .img1 {
     position: absolute;
     width: 150px;
     left: -30px;
     top: 70px;
-}
-.imgDiv .img2 {
+  }
+  .imgDiv .img2 {
     position: absolute;
     width: 160px;
     right: -20px;
     top: 200px;
-}
-.imgDiv .img3 {
+  }
+  .imgDiv .img3 {
     position: absolute;
     width: 160px;
     left: -30px;
     bottom: 20px;
-}
-.insightsRight .insightsRightWrap p {
+  }
+  .insightsRight .insightsRightWrap p {
     font-size: 14px;
     text-align: center;
     margin: 0;
-}
-.iconSection .iconsdiv{
+  }
+  .iconSection .iconsdiv {
     opacity: 1 !important;
-}
-.iconSection{
+  }
+  .iconSection {
     height: auto !important;
-}
-.iconSection .iconsdiv img {
-    width: 55px;
-    height: 55px;
-}
-.iconSection .iconsdiv{
-    margin: 15px;
-}
-.termsSection h2.termsHeading {
+  }
+  .iconSection .iconsdiv img {
+    width: 40px;
+    height: 40px;
+  }
+  .iconSection .iconsdiv {
+    margin: 10px;
+  }
+  .termsSection h2.termsHeading {
     font-size: 32px;
-}
-p.mainpara {
-    color: #292D32;
+  }
+  p.mainpara {
+    color: #292d32;
     font-size: 15px;
     margin-bottom: 60px;
-}
-section.termsSection .inner-col p {
+  }
+  section.termsSection .inner-col p {
     font-size: 15px;
-    color: #292D32;
+    color: #292d32;
     margin-bottom: 30px;
-}
-.LoginSection .mycontainer > div {
+  }
+  .LoginSection .mycontainer > div {
     width: 100%;
-}
-.LoginSection .mycontainer .col-right{
-   display: none; 
-}
-.LoginSection .login-form-wrap {
+  }
+  .LoginSection .mycontainer .col-right {
+    display: none;
+  }
+  .LoginSection .login-form-wrap {
     width: 90%;
-}
-.LoginSection .mycontainer .col-left img {
+  }
+  .LoginSection .mycontainer .col-left img {
     position: absolute;
     top: 25px;
     left: 5%;
     width: 100px;
-}
-.LoginSection , .LoginSection .mycontainer > div {
+  }
+  .LoginSection,
+  .LoginSection .mycontainer > div {
     height: auto;
-}
-.LoginSection .login-form-wrap {
+  }
+  .LoginSection .login-form-wrap {
     width: 90%;
     margin: 100px 0 50px 0;
-}
-.LoginSection .loginHeading * {
+  }
+  .LoginSection .loginHeading * {
     text-align: left !important;
-}
-h2.termsHeading {
+  }
+  h2.termsHeading {
     padding-top: 30px;
-}
+  }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {

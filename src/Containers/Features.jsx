@@ -98,7 +98,7 @@ export default function Features() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 col-sm-12 ">
+            <div className="col-md-4 col-sm-12 text-center ">
               <img
                 src={featureImg}
                 alt=""

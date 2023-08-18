@@ -40,38 +40,49 @@ export default function Profile() {
   const LogOutMain = (e) => {
     e.preventDefault();
     logout();
+    setModalOpen(false)   
     setTimeout(() => {
-      setModalOpen(false)   
+      navigate('/login')
     }, 1000); 
   };
 
   const getData = async () => {
-    let userDataFirebse = await JSON.parse(localStorage.getItem("user"));
-    setUserData(userDataFirebse)
-    console.log("profile",userDataFirebse );
-    
+    let userlocal = await JSON.parse(localStorage.getItem("user"));
+    console.log("dd", userlocal)
+    if(userlocal == undefined || userlocal == null ){
+      return false
+    }else{
+      setUserData(userlocal)
+      return true;
+    }
+    console.log("profile",userlocal );
   }
 
   // useLayoutEffect( getData, []);
 
 
-  useEffect(() => {
-    getData() 
-    JSON.parse(localStorage.getItem("user"));
-    if(!user){
-        navigate('/login')
-      
-    }else{
-      navigate('/profile')
-      
-    }
+  useEffect( () => {
+    getData().then(response => {
+      console.log(response)
+      if(response == false){
+          navigate('/login')      
+      }
+
+    })
+   
   
-    return () => {   
-    };
-  }, [user])
+    // return () => {   
+    // };
+  }, [])
 
 
-
+// useEffect(() => {
+//     if(user){
+//       navigate('/profile')
+//     }else{
+//       navigate('/login')
+//     }
+// },[])
 
 
   return (

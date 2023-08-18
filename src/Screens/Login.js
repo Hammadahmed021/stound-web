@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect,useLayoutEffect, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Components/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -21,7 +21,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const [errorM  , setErrorM] =useState('')
-  // const [userData,setUserData]= useState(null)
+  const [userData,setUserData]= useState(null)
 
   const settingData = async (serverResponse) => {
     localStorage.setItem("user", JSON.stringify(serverResponse.data.user));
@@ -51,19 +51,45 @@ export default function Login() {
     }
   };
 
-const y = async ()=>  await JSON.parse(localStorage.getItem("user"))
+// const y = async ()=>  await JSON.parse(localStorage.getItem("user"))
 
-const checkLogin = ()=>{
+// const checkLogin = ()=>{
 
-  if (user){
-    navigate("/profile")
-   console.log("sjdbjksbdjksbdjk")
-   } else {
-    navigate("/login")
-   }
+//   if (user){
+//     navigate("/profile")
+//    console.log("sjdbjksbdjksbdjk")
+//    } else {
+//     navigate("/login")
+//    }
+// }
+
+const getData = async () => {
+  let userlocal = await JSON.parse(localStorage.getItem("user"));
+  console.log("dd", userlocal)
+  if(userlocal == undefined || userlocal == null ){
+    return false
+  }else{
+    setUserData(userlocal)
+    return true;
+  }
+  console.log("profile",userlocal );
 }
 
-useEffect(checkLogin,[])
+// useLayoutEffect(checkLogin,[])
+
+useEffect( () => {
+  getData().then(response => {
+    console.log(response)
+    if(response == true){
+        navigate('/')      
+    }
+
+  })
+ 
+
+  // return () => {   
+  // };
+}, [])
 
 
   // useEffect(() => {
@@ -134,7 +160,7 @@ useEffect(checkLogin,[])
                 </span>
                 <span>
                   <p>
-                    <Link to="/reset">Forgot Password?</Link>
+                    <Link to="">Forgot Password?</Link>
                   </p>
                 </span>
               </div>

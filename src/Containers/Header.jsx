@@ -39,7 +39,9 @@ export default function Header() {
       navigate("/login");
     }, 500);
   };
-
+useEffect(() => {
+  
+}, [user])
   return (
     <>
       <header>

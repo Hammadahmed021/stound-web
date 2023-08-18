@@ -1,7 +1,15 @@
 import "./App.css";
 import React, { useState, useEffect, useRef } from "react";
 import Loader from "./Components/Loader";
-import { Home, Deletion, Privacy, Terms, Login, Profile , Reset } from "./Screens";
+import {
+  Home,
+  Deletion,
+  Privacy,
+  Terms,
+  Login,
+  Profile,
+  Reset,
+} from "./Screens";
 import { useLocation } from "react-router-dom";
 import SoundBar from "./Components/SoundBar";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
@@ -14,7 +22,7 @@ import ParticleConfig from "./Components/ParticleConfig";
 import Cursor from "./Components/Cursor";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
-import { useLocomotiveScroll } from "react-locomotive-scroll"; 
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 const App = () => {
   AOS.init();
@@ -29,6 +37,7 @@ const App = () => {
   //   the loaded state will become true
   useEffect(() => {
     isReady && scroll.scrollTo(0, 0);
+
     let timer = setTimeout(() => setLoaded(false), 5000);
     return () => {
       clearTimeout(timer);
@@ -76,7 +85,7 @@ const App = () => {
                   <>
                     <ScrollProxy />
 
-                    <Routes scrollRestoration="auto">
+                    <Routes forceRefresh={true} scrollRestoration="auto">
                       <Route exact path="/" element={<Home />} />
                       <Route path="/deletion-policy" element={<Deletion />} />
                       <Route path="/privacy-policy" element={<Privacy />} />

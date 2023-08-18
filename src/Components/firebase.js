@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+
 import { initializeApp } from "firebase/app";
 import { getAuth, sendPasswordResetEmail, signOut } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -32,9 +33,11 @@ const sendPasswordReset = async (email) => {
 };
 
 const logout = () => {
+ 
     localStorage.removeItem("token");
     localStorage.removeItem("user");
   signOut(auth);
+
 };
 
 export { auth, sendPasswordReset, logout };
