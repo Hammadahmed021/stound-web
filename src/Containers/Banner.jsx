@@ -1,9 +1,12 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import gsap from 'gsap'
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import gsap from "gsap";
 import AOS from "aos";
 
-const Banner = () => {
+import bannerImg from "../Assets/Images/bg.png";
+import appStoreImg from "../Assets/Images/appstore.png";
+import playStoreImg from "../Assets/Images/playstore.png";
 
+const Banner = () => {
   // useLayoutEffect(() => {
   //   let t1 = gsap.timeline();
 
@@ -32,77 +35,100 @@ const Banner = () => {
   //   return () => {
   //        };
   // }, [])
-  const [darkMode, setDarkMode] = useState(false);
-
+  // const [darkMode, setDarkMode] = useState(false);
 
   useLayoutEffect(() => {
-    const body = document.body
-    const toggle = document.querySelector('.toggle-inner')
+    // const body = document.body
+    // const toggle = document.querySelector('.toggle-inner')
 
     // If dark mode is enabled - adds classes to update dark-mode styling.
     // Else, removes and styling is as normal.
-    if (darkMode === true) {
-      body.classList.add('dark-mode')
-      toggle.classList.add('toggle-active')
-    } else {
-      body.classList.remove('dark-mode')
-      toggle.classList.remove('toggle-active')
-    }
+    // if (darkMode === true) {
+    //   body.classList.add('dark-mode')
+    //   toggle.classList.add('toggle-active')
+    // } else {
+    //   body.classList.remove('dark-mode')
+    //   toggle.classList.remove('toggle-active')
+    // }
     AOS.init();
     AOS.refresh();
 
-    return () => {
-
-    };
-  }, [darkMode])
-
+    return () => {};
+  }, []);
+  // }, [darkMode])
 
   return (
     <>
-      <header>
-
-        <section data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-        >
-          <div className="container top-header">
-            <div className=" row top-row">
-              <div className="col-6">
-
-                <p className='logo'><a href="mailto:Hammadahmed4015@gmail.com">HA</a></p>
-              </div>
-              <div className="col-6">
-
-                <ul className="ul-links" >
-                  <li><a href="mailto:Hammadahmed4015@gmail.com">Mail</a></li>
-                  <li>
-                    <div
-                    id="toggle"
-                    onClick={() => darkMode === false ? setDarkMode(true) : setDarkMode(false)}
-                  >
-                    <div className="toggle-inner" />
-                    </div>
-                    
-                  </li>
-                </ul>
-
+      <section
+        className="bannerClass"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div className="container top-header">
+          <div className=" row top-row-2">
+            <div className="col-6 ">
+              <img
+                src={bannerImg}
+                className="bannerImage img-fluid"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="300"
+              />
+            </div>
+            <div className="col-6 p-5 d-flex flex-column justify-content-center flex-wrap">
+              <h1
+                className="bannerMainText"
+                data-aos="fade-up"
+                data-aos-duration="00"
+                data-aos-offset="0"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="50"
+              >
+                Browse all properties smoothly on your finter tips...
+              </h1>
+              <p
+                className="bannerText"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-offset="0"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="100"
+              >
+                Stound mobile app offers a user-friendly interface that allows
+                you to search for properties based on your criteria, such as
+                location, price, and number of bedrooms.
+              </p>
+              <div className="img-div d-flex align-items-center mt-5">
+                <img
+                  src={appStoreImg}
+                  alt=""
+                  className="bannerStoreImg"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-offset="0"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="150"
+                />
+                <img
+                  src={playStoreImg}
+                  alt=""
+                  className="bannerStoreImg ml-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-offset="0"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="200"
+                />
               </div>
             </div>
           </div>
-
-          <div className="banner-text"><h2><span className='author-name'>Hammad Ahmed </span><br /> <span className="banner-subtext">Frontend UI/UX and CMS Developer.</span></h2></div>
-          <div class="scrolldown">
-
-          </div>
-          <div className="vertical-scroll">
-            <p >scroll</p>
-          </div>
-        </section>
-      </header>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Banner
-
-
+export default Banner;

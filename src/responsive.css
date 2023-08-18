@@ -1,61 +1,352 @@
-@media only screen and (max-width: 1024px)  { }
-@media only screen and (max-width: 768px)  { 
-    .text p{
-        font-size: 32px;
+@media only screen and (max-width: 1460px) and (min-width: 1025px) {
+    .ProfileSection .login-form-wrap {
+        zoom: 80%;
     }
-    header{
-        height: auto;
-    }
-    .skill-slide .container{
-        min-height: 80vh;
-    }
-    .skill-slide{
-        min-height: 90vh;
-    }
-    
+  .footer .border-light .same-border:before {
+    right: 50px;
+    height: 100px;
+  }
+  .copyright ul li:before {
+    right: -20px;
+  }
+  .footer form {
+    width: 100%;
+  }
+  .footer form input#email,
+  .footer form input[type="submit"] {
+    height: 50px;
+  }
 }
-@media only screen and (max-width: 767px)  {
-    .skill-slide .container{
-        min-height: 40vh;
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+  .text p {
+    font-size: 32px;
+  }
+  header {
+    height: auto;
+  }
+  .skill-slide .container {
+    min-height: 80vh;
+  }
+  .skill-slide {
+    min-height: 90vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+    .ProfileSection .login-form-wrap .PersonalInfo .infoLabel p{
+        font-size: 14px;
     }
-    .skill-slide{
-        min-height: 70vh;
+    .ProfileSection .loginHeading h2.globalHeading {
+        font-size: 22px;
     }
-    .skill-slide h2 , .service-section h2{
-        font-size: 5rem;
+    .ProfileSection .login-form-wrap .profileCard{
+        position: relative;
     }
-    .work-card h2{
-        font-size: 20px !important;
+    .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit{
+        padding: 8px 16px;
+        font-size: 14px;
     }
-    section.footer-contact{
-        padding: 40px 0 20px 0;
+    .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit span{
+        font-size: 16px;
     }
-    section.footer-contact .row .col-6 {
-        max-width: 100% !important;
-        text-align: center;
-        flex: 100%;
+    .ProfileSection .login-form-wrap .profileCard .rightCol span.userEdit {
+        position: absolute;
+        top: 5px;
+        right: 5px;
     }
-    section.footer-contact .row {
-        display: flex;
-        flex-direction: column-reverse;
+    .ProfileSection .profileCard img {
+        position: relative !important;
+        width: 80px !important;
+        height: 80px;
     }
-    p.copyright {
-        margin: 20px 0 0 0;
-       
-    }
-    ul.ul-links{
-        justify-content: center;
-        padding: 0;
-    }
-    .about-section{
-        width: 90vw;
-    }
-    .skill-slide .container h4 span{
-        font-size: 4vw;
-    }
-    .work-card {
-        margin: 0 0 0 50px;
-        width: 25em;
-    }
- }
-@media only screen and (max-width: 600px) and (min-width: 400px)  {}
+  .bannerClass {
+    min-height: 80vh;
+    margin-top: -80px;
+  }
+  section.bannerClass .row .col-6:first-child {
+    display: none;
+  }
+  section.bannerClass .row .col-6 {
+    width: 100%;
+    align-content: center;
+    max-width: 100%;
+    padding: 3rem 1rem !important;
+    flex: 100%;
+  }
+  section.bannerClass .img-div {
+    margin-top: 0px !important;
+  }
+  p.logo img {
+    width: 100px;
+  }
+  .top-header ul.ul-links {
+    padding: 0;
+  }
+  .login-cta,
+  .nh-login-cta {
+    background: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: #0bb4ff;
+    transition: 0.5s ease-in-out;
+    z-index: 11;
+    font-size: 14px;
+  }
+  .nh-login-cta {
+    color: #fff;
+    background: #0bb4ff;
+  }
+  .bannerMainText {
+    font-size: 32px;
+  }
+  .FaqsSection .accordion-item h2.accordion-header button {
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+  }
+  .globalHeading {
+    font-size: 26px;
+    text-align: center;
+  }
+  .FaqsSection {
+    margin: 40px 0;
+  }
+  .FaqsSection .row:nth-child(2) {
+    padding-top: 0 !important;
+  }
+  .ElevateSectionInner {
+    margin-top: 50px;
+  }
+  .ElevateSectionInner p {
+    font-size: 14px;
+  }
+  .trigger .col-md-6 {
+    padding: 0;
+  }
+  section.ElevateSection {
+    margin-bottom: 50px;
+  }
+  .footer .firstrow-foot {
+    padding: 10px;
+  }
+  .footer .firstrow-foot img {
+    width: 100px;
+  }
+  .footer .border-light .same-border:before {
+    content: unset;
+  }
+  .footer .firstrow-foot p {
+    width: 100%;
+  }
+  .footer .same-border {
+    padding-top: 0 !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+  }
+  .footer .container-fluid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .footer form {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  section.ElevateSection .row .col-md-4 {
+    display: none;
+  }
+  section.ElevateSection .row {
+    padding-bottom: 0 !important;
+  }
+  .copyright ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer form input[type="submit"] {
+    height: 45px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .footer form input#email {
+    width: 100%;
+    height: 45px;
+  }
+  .trigger * {
+    opacity: 1 !important;
+    text-align: left !important;
+  }
+  .trigger {
+    height: auto !important;
+    padding-top: 80px !important;
+  }
+  .trigger .col-md-5 {
+    display: none;
+  }
+  .trigger .customCard {
+    transition: 0.5s ease-in-out;
+    width: 100% !important;
+    opacity: 0;
+    margin-top: 40px;
+  }
+  .trigger .globalHeading {
+    text-align: center !important;
+  }
+  .featuresSection,
+  .featuresHeading {
+    height: auto !important;
+    padding: 0;
+  }
+  .featuresSection * {
+    opacity: 1 !important;
+  }
+  .featuresSection .leftCol .customCard {
+    text-align: left;
+  }
+  .featuresSection .featureImg {
+    display: none;
+  }
+  .featuresSection .customCard {
+    margin-top: 40px;
+  }
+  .featuresHeading {
+    padding-top: 60px;
+  }
+  .copyright ul li:before {
+    content: unset;
+  }
+  .copyright ul li:first-child::before {
+    content: "";
+  }
+  .highQuality {
+    margin-top: 50px;
+    padding: 0;
+  }
+  .highQuality .col-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+    padding: 5px;
+  }
+  .highQuality-inner {
+    padding: 30px 10px;
+  }
+  .d-non {
+    display: none;
+  }
+  img.hq-image {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0%;
+    margin: 20px 0;
+  }
+  .highQuality-inner p {
+    font-size: 14px;
+  }
+  .insightsMain{
+    height: auto;
+    padding: 0;
+    margin-top: 60px;
+    border: none;
+  }
+  .insightsMain *{
+    opacity: 1 !important;
+  }
+  .insightsMain .col-6{
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 10px !important;
+  }
+  .insightsMain .imgDiv {
+    width: 300px;
+    height: 600px;
+    margin: auto;
+}
+  .insightsRight .insightsRightInner {
+    margin-top: 40px;
+}
+.imgDiv .img1 {
+    position: absolute;
+    width: 150px;
+    left: -30px;
+    top: 70px;
+}
+.imgDiv .img2 {
+    position: absolute;
+    width: 160px;
+    right: -20px;
+    top: 200px;
+}
+.imgDiv .img3 {
+    position: absolute;
+    width: 160px;
+    left: -30px;
+    bottom: 20px;
+}
+.insightsRight .insightsRightWrap p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+.iconSection .iconsdiv{
+    opacity: 1 !important;
+}
+.iconSection{
+    height: auto !important;
+}
+.iconSection .iconsdiv img {
+    width: 55px;
+    height: 55px;
+}
+.iconSection .iconsdiv{
+    margin: 15px;
+}
+.termsSection h2.termsHeading {
+    font-size: 32px;
+}
+p.mainpara {
+    color: #292D32;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+section.termsSection .inner-col p {
+    font-size: 15px;
+    color: #292D32;
+    margin-bottom: 30px;
+}
+.LoginSection .mycontainer > div {
+    width: 100%;
+}
+.LoginSection .mycontainer .col-right{
+   display: none; 
+}
+.LoginSection .login-form-wrap {
+    width: 90%;
+}
+.LoginSection .mycontainer .col-left img {
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    width: 100px;
+}
+.LoginSection , .LoginSection .mycontainer > div {
+    height: auto;
+}
+.LoginSection .login-form-wrap {
+    width: 90%;
+    margin: 100px 0 50px 0;
+}
+.LoginSection .loginHeading * {
+    text-align: left !important;
+}
+h2.termsHeading {
+    padding-top: 30px;
+}
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+}

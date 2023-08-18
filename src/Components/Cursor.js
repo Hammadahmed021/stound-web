@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState, useRef, useCallback} from 'react'
 import { Expo , gsap } from 'gsap';
 
+import stoundLogo from "../Assets/Images/Group-2.png";
 
   // Gsap Ticker Function
   function useTicker(callback, paused) {
@@ -110,7 +111,7 @@ const Cursor = () => {
       <div className="container-div">
       <div ref={jellyRef} id={"jelly-id"} className="jelly-blob">
         <div ref={textRef} id={"text-id"} className="inside-text">
-          Hi!
+          <img src={stoundLogo} width={25} />
         </div>
       </div>
     </div>

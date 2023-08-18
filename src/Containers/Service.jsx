@@ -20,6 +20,7 @@ const Service = () => {
   useLayoutEffect(() => {
     let element = ref.current;
     let t1 = gsap.timeline();
+  
     let scrollingElement = horizontalRef.current;
     let pinWrapWidth = scrollingElement.offsetWidth;
 

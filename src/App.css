@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0BB4FF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,13 +54,13 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgb(0, 0, 0);
+  background: #ffffff;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; 
 }
-.loader span{
+/* .loader span{
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -111,17 +111,17 @@
   to{
     left: 12px;
   }
-}
+} */
 .loader p{
   flex: 0 0 100%;
-  color: #dfd3c3;
+  color: #0BB4FF;
   font-size: 20px;
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 2px;
    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255,255,255,0.1);
-    background-image: linear-gradient( to left, transparent, #dfd3c3,#dfdfdf ,#dfd3c3, transparent);
+    -webkit-text-fill-color: #0BB4FF1a;
+    background-image: linear-gradient( to left, transparent, #0BB4FF,#0BB4FF ,#0BB4FF, transparent);
     margin-top: 30px;
   background-repeat: no-repeat;
   background-size: 200%;
@@ -154,19 +154,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: difference;
-  background-color: #dfd3c3;
+  /* mix-blend-mode: difference; */
+  background-color: #0BB4FF;
   border-radius: 150px;
   transform-origin: 50% 50%;
   transform: translate(-50%, -50%);
   will-change: width, height, transform, border;
-  z-index: 999;
+  z-index: 10;
   pointer-events: none;
 }
 /* Text Inside Jelly Blob */
 .inside-text {
   width: 100%;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   opacity: 1;
   color: #dfd3c3;
   font-size: 18px;
@@ -174,5 +174,32 @@
   font-weight: 600;
 }
 
-
-
+.trigger{
+  height: 100vh;
+ 
+  /* margin-top: 50px; */
+  padding-top: 100px;
+}
+.featuresSection{
+  height: 100vh;
+}
+.testClass{
+  font-size: 6vw
+}
+.bigDiffImg{
+  opacity: 0.1;
+  transition: 0.5s ease-in-out;
+}
+.bigDiffHeading {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.trigger .customCard{
+  transition: 0.5s ease-in-out;
+  width: 80%;
+  opacity: 0;
+}
+.featuresSection .customCard{
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}

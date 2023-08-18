@@ -1,0 +1,7 @@
+export {default as Home} from '../Screens/Home'
+export {default as Deletion} from '../Screens/Deletion'
+export {default as Terms} from '../Screens/Terms'
+export {default as Privacy} from '../Screens/Privacy'
+export {default as Login} from '../Screens/Login'
+export {default as Profile} from '../Screens/Profile'
+export {default as Reset} from '../Screens/Reset'

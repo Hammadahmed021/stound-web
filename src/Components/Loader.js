@@ -8,7 +8,7 @@ const Loader = () => {
     <div className="cssload-preloader" >
   <div className="loader" >
     <span></span>
-      <p>Please Wait Loading...</p>
+      <p>Loading...</p>
   </div>
 </div>
     </>

@@ -1,5 +1,15 @@
+export { default as Header } from './Header';
 export { default as Banner } from './Banner';
 export { default as About } from './About';
 export { default as Contact } from './Contact';
 export { default as Service } from './Service';
 export { default as Work } from './Work';
+export { default as Features } from './Features';
+export { default as BigTest } from './BigTest';
+export { default as BigDiff } from './BigDiff';
+export { default as HighQuality } from './HighQuality';
+export { default as Insights } from './Insights';
+export { default as Icongraphy } from './Icongraphy';
+export { default as FAQs } from './FAQs';
+export { default as Elevate } from './Elevate';
+export { default as Footer } from './Footer';
