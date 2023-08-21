@@ -485,7 +485,7 @@ h2.termsHeading {
 .LoginSection span.inputWrap input:focus {
   outline: none;
 }
-.LoginSection span.inputWrap span {
+.LoginSection span.inputWrap span.material-symbols-outlined{
   position: absolute;
   left: 10px;
   font-size: 20px;
@@ -1061,13 +1061,12 @@ p.error {
   text-align: left;
   margin-top: 20px;
 }
-/* .logo  a{
-  font-size: 20px;
-  font-weight: bold;
-  color:#dfd3c3;
-  text-decoration: none;
-} */
-
+.LoginSection span.inputWrap span.hanlePassword span.material-symbols-outlined {
+  right: 10px;
+  left: unset;
+  top: 15px;
+  cursor: pointer;
+}
 .banner-text {
   margin-top: 3%;
   padding: 10px;

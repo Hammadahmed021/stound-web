@@ -85,7 +85,7 @@ const App = () => {
                   <>
                     <ScrollProxy />
 
-                    <Routes forceRefresh={true} scrollRestoration="auto">
+                    <Routes  forceRefresh={true} scrollRestoration="auto">
                       <Route exact path="/" element={<Home />} />
                       <Route path="/deletion-policy" element={<Deletion />} />
                       <Route path="/privacy-policy" element={<Privacy />} />

@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, sendPasswordReset } from "../Components/firebase";
-
+import loginImg from "../Assets/Images/loginImg.png";
+import logo from "../Assets/Images/logoBlue.png";
 import { Footer, Header } from "../Containers";
 
 function Reset() {
@@ -16,27 +17,60 @@ function Reset() {
   }, [user, loading]);
   return (
     <>
-      <Header />
-      <div className="reset">
-        <div className="reset__container">
-          <input
-            type="text"
-            className="reset__textBox"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-mail Address"
-          />
-          <button
-            className="reset__btn"
-            onClick={() => sendPasswordReset(email)}
-          >
-            Send password reset email
-          </button>
-          <div>
-            Want to log In? <Link to="/login">Log In</Link> now.
+      <section className="LoginSection">
+        <div className="mycontainer">
+          <div className=" col-left">
+            <Link to="/">
+              <img src={logo} className="img-fluid logoImg" />
+            </Link>
+
+            <div className="login-form-wrap">
+              <div className="goBackdiv">
+                <Link to="/login">
+                  <h4>
+                    <span class="material-symbols-outlined">arrow_back</span> Go
+                    back
+                  </h4>
+                </Link>
+              </div>
+              <div className="loginHeading">
+                <h2 className="globalHeading">Reset Password</h2>
+                <p>
+                  At Stound, we respect your right to control your personal
+                  information.
+                </p>
+              </div>
+              <div className="loginForm">
+                <span className="emailWrap inputWrap">
+                  <span class="material-symbols-outlined">mail</span>
+                  <input
+                    placeholder="johnwick@gmail.com"
+                    id="email-address"
+                    name="email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </span>
+              </div>
+
+              <div className="submitWrap">
+                <Link to="">
+                  <button
+                    className="loginBtn"
+                    onClick={() => sendPasswordReset(email)}
+                  >
+                    Forgot Password
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className=" col-right">
+            <img src={loginImg} className="img-fluid loginImg" />
           </div>
         </div>
-      </div>
+      </section>
       <Footer />
     </>
   );
