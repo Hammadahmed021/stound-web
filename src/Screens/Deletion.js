@@ -10,101 +10,61 @@ export default function Deletion() {
           <div className="row">
             <div className="col-md-12">
               <h2 className="termsHeading">Deletion Policy</h2>
+              <h4>INTRODUCTION:</h4>
               <p className="mainpara">
-                At Stound, we respect your right to control your personal
-                information. This Deletion Policy outlines our procedures for
-                deleting and handling your data when you request the removal of
-                your account or specific information from our platform.
+                This App Deletion Policy ("Policy") outlines the procedures and guidelines
+                for users to delete their accounts and associated data from Stound ("App"),
+                in compliance with Apple's App Store and Google Play guidelines. By using
+                the App, users agree to abide by this Policy.
               </p>
               <div className="inner-col">
-                <h5>1. Account Deletion</h5>
+                <h5>ACCOUNT DELETION PROCESS:</h5>
                 <p>
-                  1.1. If you decide to close your Stound account, you can
-                  initiate the deletion process by accessing your account
-                  settings and selecting the "Delete Account" option. Before
-                  proceeding, we may ask you to verify your identity to ensure
-                  the security of your account.
+                    Users who wish to delete their accounts and data from the App can follow these steps:
                 </p>
+                <ol className="termsorderlist">
+                    <li>Open the App and navigate to the "Settings" or "Account" section.</li>
+                    <li>Look for the "Delete Account".</li>
+                    <li>Confirm their intention to delete the account when prompted.</li>
+                </ol>
+                <p>They can also delete their account using our web portal by following these steps:</p>
+                <ol className="termsorderlist">
+                    <li>Login to their Stound Account and go to “Setting” or “Account” section.</li>
+                    <li>Look for the “Delete Account”.</li>
+                    <li>Confirm their intention to delete the account when prompted.</li>
+                </ol>
+                <h5>DATA DELETION:</h5>
                 <p>
-                  1.2. Once your account deletion request is submitted, we will
-                  deactivate your account, making it inaccessible to you and
-                  other users.
+                    Upon confirming the account deletion, the following data associated with the user's account will be permanently deleted:
                 </p>
-                <p>
-                  1.3. Your personal information associated with your account
-                  will be retained in our systems for a limited period in
-                  accordance with legal requirements or legitimate business
-                  purposes.
-                </p>
+                <ul className="termsUnorderlist">
+                    <li>Personal information provided during account registration, such as name, email address, and profile picture.</li>
+                    <li>User-generated content, including listing, chats, and other contributions.</li>
+                    <li>Any other data that is directly linked to the user's account.</li>
+                </ul>
 
-                <h5>2. Data Retention</h5>
-                <p>
-                  2.1. Stound will retain your personal information as long as
-                  necessary to fulfill the purposes outlined in our Privacy
-                  Policy. After the retention period ends, we will securely
-                  delete or anonymize your data.
-                </p>
-                <p>
-                  2.2. We may retain certain data even after your account
-                  deletion if required by law or for legitimate business
-                  purposes, such as resolving disputes, enforcing our
-                  agreements, or complying with legal obligations.
-                </p>
-
-                <h5>3. Data Removal Requests</h5>
+                <h5>RETENTION OF NON-PERSONAL DATA:</h5>
 
                 <p>
-                  3.1. If you wish to remove specific information associated
-                  with your account without deleting the entire account, you can
-                  submit a data removal request by contacting us at [Your
-                  Contact Email].
-                </p>
-                <p>
-                  3.2. We will review your request and take appropriate actions
-                  to delete or anonymize the specified data within a reasonable
-                  timeframe, as required by applicable laws and regulations.
-                </p>
-                <h5>4. Backup and Recovery</h5>
-
-                <p>
-                  4.1. Please note that our routine data backup processes may
-                  temporarily retain your data even after deletion. These
-                  backups are maintained solely for disaster recovery and system
-                  stability purposes and are not used to restore individual
-                  accounts.
+                    Some non-personal and non-identifiable data may be retained for analytical purposes, such as improving the App's performance and user experience. This data will be anonymized and used solely for statistical analysis.
                 </p>
 
-                <h5>5. Children's Data</h5>
+                <h5>COMMUNICATION:</h5>
 
                 <p>
-                  5.1. If you are the parent or legal guardian of a child under
-                  the age of 13 and believe that your child's information is
-                  stored in our database, you can request the removal of that
-                  data by contacting us at [Your Contact Email].
-                </p>
-                <h5>6. Contact Us</h5>
-
-                <p>
-                  6.1. If you have any questions or concerns about the deletion
-                  of your data or any other privacy-related matters, please
-                  contact us at [Your Contact Email].
+                    Upon initiating the account deletion process, users may receive a confirmation email notifying them of the deletion request. Additionally, a final confirmation message will be displayed within the App upon successful account deletion.
                 </p>
 
-                <h5>7. Changes to the Deletion Policy</h5>
+                <h5>DATA SECURITY:</h5>
 
                 <p>
-                  7.1. Stound may update this Deletion Policy from time to time
-                  to reflect changes in our data management practices or for
-                  other operational, legal, or regulatory reasons. Any updates
-                  will be posted on Stound, and your continued use of the
-                  platform after changes are made will signify your acceptance
-                  of the revised Deletion Policy.
+                    We take data security seriously and employ industry-standard measures to safeguard user data. Once an account deletion is confirmed, data removal will be irreversible, and reasonable precautions will be taken to prevent unauthorized access to deleted information.
+                    For any inquiries, concerns, or requests related to account deletion or data privacy, users can contact our support team at <a href="#"> stound.manage@gmail.com</a>                    
                 </p>
-                <p>
-                  Thank you for choosing Stound. We are committed to
-                  safeguarding your privacy and ensuring the secure handling of
-                  your data.
+                <p><span className="text-line">Policy changes:</span>
+                This Policy may be updated from time to time to reflect changes in our practices or regulatory requirements. Users will be notified of any significant changes in the Policy.
                 </p>
+                
               </div>
             </div>
           </div>

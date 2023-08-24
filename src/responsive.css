@@ -136,7 +136,7 @@
     background: #0bb4ff;
   }
   .bannerMainText {
-    font-size: 32px;
+    font-size: 26px;
   }
   .FaqsSection .accordion-item h2.accordion-header button {
     text-align: left;
@@ -342,7 +342,11 @@
   }
   .iconSection .iconsdiv {
     margin: 10px;
-  }
+    width: 70px;
+}
+.iconsdiv p{
+  font-size: 12px;
+}
   .termsSection h2.termsHeading {
     font-size: 32px;
   }

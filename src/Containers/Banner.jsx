@@ -87,7 +87,7 @@ const Banner = () => {
                 data-aos-easing="ease-in-sine"
                 data-aos-delay="50"
               >
-                Browse all properties smoothly on your finter tips...
+                Stound: Your Gateway to Exceptional Properties!
               </h1>
               <p
                 className="bannerText"
@@ -97,9 +97,9 @@ const Banner = () => {
                 data-aos-easing="ease-in-sine"
                 data-aos-delay="100"
               >
-                Stound mobile app offers a user-friendly interface that allows
-                you to search for properties based on your criteria, such as
-                location, price, and number of bedrooms.
+                Search, buy, sell, or rent your perfect home with Stound. Delve
+                into a curated selection of properties that match your lifestyle
+                and preferences. Begin your property exploration journey today!
               </p>
               <div className="img-div d-flex align-items-center mt-5">
                 <img

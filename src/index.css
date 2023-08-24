@@ -38,6 +38,19 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
+html.has-scroll-smooth {
+	backface-visibility: hidden;
+	transform: translateZ(0);
+}
+
+[data-load-container] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+}
 
 /* .has-scroll-smooth [data-scroll-container] {
   overflow-x: hidden;
@@ -116,14 +129,52 @@ header {
   min-height: inherit;
   position: relative;
 }
+.customCard p span {
+  color: #0bb4ff;
+  font-size: 20px;
+  line-height: 1em;
+}
 .bannerMainText {
-  font-size: 42px;
+  font-size: 40px;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 .bannerStoreImg {
   width: 140px;
+}
+.contactForm span.inputWrap span.material-symbols-outlined {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  color: #0bb4ff;
+}
+.contactForm span.textWrap span.material-symbols-outlined {
+  top: 5px;
+}
+.contactForm span.inputWrap input ,.contactForm span.inputWrap textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 50px;
+}
+.contactForm span.textWrap{
+  height: auto;
+}
+.contactForm span.inputWrap {
+  width: 100%;
+  display: block;
+  height: 50px;
+  border: 0.5px solid rgba(41, 45, 50, 0.2);
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 50px;
+}
+.contactForm span.textWrap{
+  height: auto;
 }
 .globalHeading {
   color: #0bb4ff;
@@ -561,7 +612,43 @@ h2.termsHeading {
 .LoginSection .submitWrap .loginBtn:focus {
   outline: none;
 }
-.LoginSection .submitWrap .loginBtn {
+.LoginSection .submitWrap .loginBtn:focus , .contactFormWrap .submitWrap .loginBtn:focus  {
+  outline: none;
+}
+.LoginSection .submitWrap .loginBtn:hover, .contactFormWrap .submitWrap .loginBtn:hover{
+  color: #ffffff;
+  text-decoration: none;
+  background: #000;
+}
+.contactdetail {
+  margin-top: 30px;
+}
+.contactdetail .top {
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contactdetail a {
+  color: black;
+  text-decoration: none;
+}
+.contactdetail a:hover {
+  color: #0bb4ff;
+}
+.contactdetail h5 {
+  color: #0bb4ff;
+  margin-bottom: 20px;
+}
+.contactdetail .top p{
+  margin-bottom: 0 !important;
+  font-weight: 500;
+}
+.contactdetail .top span.material-symbols-outlined {
+   color: #0bb4ff;
+  padding-right: 10px;
+}
+
+.LoginSection .submitWrap .loginBtn , .contactFormWrap .submitWrap .loginBtn  {
   width: 100%;
   display: block;
   height: 50px;
@@ -570,6 +657,9 @@ h2.termsHeading {
   background: #0bb4ff;
   color: white;
   transition: 0.5s ease-in-out;
+}
+.submitWrap a:hover{
+  text-decoration: none;
 }
 .ProfileSection .profileCard img {
   position: relative !important;
@@ -689,7 +779,47 @@ section.termsSection h5 {
 section.termsSection .inner-col p {
   font-size: 16px;
   color: #292d32;
+  margin-bottom: 40px;
+}
+.termsSection .termsUnorderlist {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.termsSection .termsUnorderlist li {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #292d32;
+}
+p.mainpara-2{
+  color: #292d32;
+  font-size: 16px;
   margin-bottom: 50px;
+  font-weight: 500;
+}
+table, tr, th, td{
+  border: 1px solid #292d32 !important;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+.termsSection .inner-col th{
+  color: #292d32;
+  font-size: 16px;
+  font-weight: 500;
+}
+.termsSection .inner-col td{
+  color: #292d32;
+  font-size: 14px;
+  font-weight: 500;
+}
+section.termsSection a{
+  font-size: 14px;
+  color: #0bb4ff;
+  font-weight: 500;
+  text-decoration: underline;
+}
+section.termsSection .inner-col ul{
+  margin-bottom: 40px;
 }
 .modalDiv button {
   border-radius: 10px;

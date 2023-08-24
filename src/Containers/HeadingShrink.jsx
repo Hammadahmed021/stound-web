@@ -30,7 +30,7 @@ export default function HeadingShrink() {
   return (
     <>
       <div className=" featuresHeading">
-        <h2 className="testClass globalHeading">Stound's Features</h2>
+        <h2 className="testClass globalHeading">Stound’s Noteworthy Features</h2>
       </div>
     </>
   );

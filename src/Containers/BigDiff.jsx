@@ -34,14 +34,20 @@ export default function BigDiff() {
         tl.to(".card-1", { yPercent: 40, duration: 0.05, opacity: 0.5 });
         tl.to(".card-1", { xPercent: 32, duration: 0.05, opacity: 1 });
 
-        tl.to(".card-2", { yPercent: 60, duration: 0.05, opacity: 0.5 });
+        tl.to(".card-2", { yPercent: 40, duration: 0.05, opacity: 0.5 });
         tl.to(".card-2", { xPercent: 32, duration: 0.05, opacity: 1 });
 
         tl.to(".card-3", { yPercent: 40, duration: 0.05, opacity: 0.5 });
-        tl.to(".card-3", { xPercent: 20, duration: 0.05, opacity: 1 });
+        tl.to(".card-3", { xPercent: 32, duration: 0.05, opacity: 1 });
 
         tl.to(".card-4", { yPercent: 50, duration: 0.05, opacity: 0.5 });
         tl.to(".card-4", { xPercent: 20, duration: 0.05, opacity: 1 });
+
+        tl.to(".card-5", { yPercent: 50, duration: 0.05, opacity: 0.5 });
+        tl.to(".card-5", { xPercent: 20, duration: 0.05, opacity: 1 });
+
+        tl.to(".card-6", { yPercent: 50, duration: 0.05, opacity: 0.5 });
+        tl.to(".card-6", { xPercent: 20, duration: 0.05, opacity: 1 });
 
         ScrollTrigger.refresh();
       }, 1000);
@@ -65,38 +71,42 @@ export default function BigDiff() {
             <div className="row scrubEnd">
               <div className="col-md-6 col-sm-12 mt-5 mb-5">
                 <div className="customCard card-1">
-                  <h2>1. Offline Access and Data Saving</h2>
+                 
                   <p>
-                    Provide offline access to saved property data and the
-                    ability to save searches and favorites even when users are
-                    not connected to the internet.
+                  <span>•</span>	An all-in-one platform for property buying/selling
                   </p>
                 </div>
 
                 <div className="customCard card-2">
-                  <h2>2. Sustainability and Green Properties</h2>
+               
                   <p>
-                    Highlight eco-friendly and sustainable properties, appealing
-                    to environmentally conscious buyers and tenants referrals,
-                    and more.
+                  <span>•</span> Built-in chat feature to connect with sellers or agents 
                   </p>
                 </div>
+                <div className="customCard card-3">
+               
+               <p>
+               <span>•</span>	Intuitively designed interface for a seamless experience
+               </p>
+             </div>
               </div>
               <div className="col-md-6 col-sm-12 mt-5 mb-5">
-                <div className="customCard card-3">
-                  <h2>3. Transparent Reviews and Ratings</h2>
+              <div className="customCard card-4">
+                
                   <p>
-                    Encourage genuine user reviews and ratings for properties
-                    and agents. Ensure transparency and authenticity to build
-                    trust among users.
+                  <span>•</span> Schedule viewings, negotiate offers, and ask questions in-app
                   </p>
                 </div>
-                <div className="customCard card-4">
-                  <h2>4. Comprehensive Property Information</h2>
+                <div className="customCard card-5">
+                
+                <p>
+                <span>•</span>	Use in-app coins to access buyer information
+                </p>
+              </div>
+              <div className="customCard card-6">
+                
                   <p>
-                    Ensure that your app offers the most detailed and accurate
-                    property information. Include additional insights, and
-                    neighborhood data, to give users a complete picture.
+                  <span>•</span>	Amplify property exploration and interactions for successful deals
                   </p>
                 </div>
               </div>

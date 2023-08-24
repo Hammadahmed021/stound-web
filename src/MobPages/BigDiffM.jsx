@@ -15,38 +15,39 @@ export default function BigDiffM() {
 
               <div className="col-md-6 col-sm-12">
                 <div className="customCard card-1">
-                  <h2>1. Offline Access and Data Saving</h2>
-                  <p>
-                    Provide offline access to saved property data and the
-                    ability to save searches and favorites even when users are
-                    not connected to the internet.
+                <p>
+                  <span>•</span>	An all-in-one platform for property buying/selling
                   </p>
                 </div>
 
                 <div className="customCard card-2">
-                  <h2>2. Sustainability and Green Properties</h2>
-                  <p>
-                    Highlight eco-friendly and sustainable properties, appealing
-                    to environmentally conscious buyers and tenants referrals,
-                    and more.
+                <p>
+                  <span>•</span> Built-in chat feature to connect with sellers or agents 
                   </p>
+                </div>
+                <div className="customCard card-3">
+                <p>
+               <span>•</span>	Intuitively designed interface for a seamless experience
+               </p>
                 </div>
               </div>
               <div className="col-md-6 col-sm-12 ">
-                <div className="customCard card-3">
-                  <h2>3. Transparent Reviews and Ratings</h2>
-                  <p>
-                    Encourage genuine user reviews and ratings for properties
-                    and agents. Ensure transparency and authenticity to build
-                    trust among users.
+               
+                <div className="customCard card-4">
+                <p>
+                  <span>•</span> Schedule viewings, negotiate offers, and ask questions in-app
                   </p>
                 </div>
-                <div className="customCard card-4">
-                  <h2>4. Comprehensive Property Information</h2>
-                  <p>
-                    Ensure that your app offers the most detailed and accurate
-                    property information. Include additional insights, and
-                    neighborhood data, to give users a complete picture.
+
+                <div className="customCard card-5">
+                <p>
+                <span>•</span>	Use in-app coins to access buyer information
+                </p>
+                </div>
+
+                <div className="customCard card-6">
+                <p>
+                  <span>•</span>	Amplify property exploration and interactions for successful deals
                   </p>
                 </div>
               </div>

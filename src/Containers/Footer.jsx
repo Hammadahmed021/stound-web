@@ -36,8 +36,20 @@ export default function Footer() {
               <h2 className="footerHeadings">Support</h2>
               <ul className="footerlinks">
                 <li>Help Center</li>
-                <li>Account Info</li>
-                <li>Contact Us</li>
+                <li>
+                <Link to="/about"> 
+                  About Us
+                  </Link>
+                  </li>
+                <li>
+                <Link to="/profile"> 
+                  Account Info
+                  </Link>
+                  </li>
+                <li>
+                <Link to="/contact"> 
+                  Contact Us
+                  </Link></li>
               </ul>
             </div>
             <div className="col-md-4 col-sm-12 pt-5 pl-5  same-border">

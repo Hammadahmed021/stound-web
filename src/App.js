@@ -9,6 +9,8 @@ import {
   Login,
   Profile,
   Reset,
+  About,
+  Contact,
 } from "./Screens";
 import { useLocation } from "react-router-dom";
 import SoundBar from "./Components/SoundBar";
@@ -93,6 +95,8 @@ const App = () => {
                       <Route path="/login" element={<Login />} />
                       <Route path="/profile" element={<Profile />} />
                       <Route path="/reset" element={<Reset />} />
+                      <Route path="/about" element={<About />} />
+                      <Route path="/contact" element={<Contact />} />
                     </Routes>
                   </>
                 </div>

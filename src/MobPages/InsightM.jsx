@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import img1 from "../Assets/Images/img1.png";
 import img2 from "../Assets/Images/img2.png";
 import img3 from "../Assets/Images/img3.png";
 
 export default function InsightM() {
- 
   return (
     <>
-       <section className="insightsMain">
+      <section className="insightsMain">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-6 p-0">
@@ -21,27 +20,26 @@ export default function InsightM() {
               <div className="insightsRight">
                 <div className="insightsRightWrap">
                   <h2 className="globalHeading">Neighborhood Insights</h2>
-                  <p>Learn About Local Amenities and Services.</p>
+                  <p>Discover the Services and Amenities Offered Nearby.</p>
                 </div>
                 <div className="insightsRightInner">
                   <div className="blob blob1">
-                    <h2>Discover the Community</h2>
+                    <h2>Learn About the Community</h2>
                     <p>
-                      Efficiently narrow down property options using a wide
-                      range of search filters such as location, price range,
-                      property type, number of bedrooms, amenities, and more.
-                      Empower users to find properties that perfectly match
-                      their preferences.
+                      Learn about the locality and community lifestyle before
+                      buying/renting a property at your desired location. At
+                      Stound, we help you find not just a house but a place
+                      where your lifestyle thrives.
                     </p>
                   </div>
 
                   <div className="blob blob2">
-                    <h2>Explore the Surrounding Neighborhood </h2>
+                    <h2>Explore the Area Around You </h2>
                     <p>
-                      Create user accounts to enable personalized experiences.
-                      Users can save their search preferences, favorite
-                      properties, and receive alerts when new properties
-                      matching their criteria become available.
+                      Discover nearby properties and other essential amenities
+                      via advanced search functionality. Our detailed insights
+                      help you evaluate the convenience of the location,
+                      ensuring a seamless transition to your new home.
                     </p>
                   </div>
                 </div>

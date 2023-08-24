@@ -18,13 +18,9 @@ export default function HQM() {
                   data-scroll-speed="1"
                   data-scroll-direction="vertical"
                 >
-                  <h2>Property Description</h2>
+                  <h2>Countless Options to Suit Your Needs. </h2>
                   <p>
-                    Include a well-written description that highlights the
-                    unique selling points and features of the property. The
-                    description should provide insights into the property's
-                    architecture, amenities, surrounding landscape, and any
-                    recent renovations.
+                  Discover the perfect fit for your lifestyle. Stound offers multiple choices to match your budget, location, and other preferences.
                   </p>
                 </div>
               </div>
@@ -44,12 +40,9 @@ export default function HQM() {
                   data-scroll-speed="-1"
                   data-scroll-direction="vertical"
                 >
-                  <h2>High-Quality Images</h2>
+                  <h2>From Apartments to Villas, Stound Has It All! </h2>
                   <p>
-                    Showcase multiple high-resolution images and, if available,
-                    videos that offer a virtual tour of the property. Visuals
-                    play a critical role in capturing the attention of potential
-                    buyers or tenants.
+                  Experience diversity with Stound. From modern apartments to spacious villas, find your dream property hassle-free!
                   </p>
                 </div>
                 <img src={right} alt="" className="img-fluid d-non" />

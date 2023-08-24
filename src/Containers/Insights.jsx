@@ -10,52 +10,47 @@ export default function Insights() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-    setTimeout(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".insightsMain",
-          start: "center center",
-          end:'',
-          scroller: ".main-app",
-          scrub: true,
-          // markers: true,
-          pin: true,
-        },
-      });
-      
-      tl.to(".imgDiv", { xPercent: 10, duration: 0.5, opacity: 1 });
+      setTimeout(() => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".insightsMain",
+            start: "center center",
+            end: "",
+            scroller: ".main-app",
+            scrub: true,
+            // markers: true,
+            pin: true,
+          },
+        });
 
-      tl.to(".insightsRight .insightsRightWrap h2", {
-        duration: 0.5,
-        opacity: 1,
-        
-      });
-      tl.to(".insightsRight .insightsRightWrap p", {
-        duration: 0.55,
-        opacity: 1,
-        
-      });
-      tl.to(".insightsMain .insightsRightInner .blob1", {
-        duration: 0.65,
-        opacity: 1,
-        
-      });
-      tl.to(".insightsMain .insightsRightInner .blob2", {
-        duration: 0.75,
-        opacity: 1,
-        
-      });
+        tl.to(".imgDiv", { xPercent: 10, duration: 0.5, opacity: 1 });
 
-      ScrollTrigger.refresh();
-    }, 1000);
+        tl.to(".insightsRight .insightsRightWrap h2", {
+          duration: 0.5,
+          opacity: 1,
+        });
+        tl.to(".insightsRight .insightsRightWrap p", {
+          duration: 0.55,
+          opacity: 1,
+        });
+        tl.to(".insightsMain .insightsRightInner .blob1", {
+          duration: 0.65,
+          opacity: 1,
+        });
+        tl.to(".insightsMain .insightsRightInner .blob2", {
+          duration: 0.75,
+          opacity: 1,
+        });
 
-  });
+        ScrollTrigger.refresh();
+      }, 1000);
+    });
 
-    return () =>  ctx.revert();
+    return () => ctx.revert();
   }, []);
   return (
     <>
-       <section className="insightsMain">
+      <section className="insightsMain">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-6">
@@ -69,27 +64,26 @@ export default function Insights() {
               <div className="insightsRight">
                 <div className="insightsRightWrap">
                   <h2 className="globalHeading">Neighborhood Insights</h2>
-                  <p>Learn About Local Amenities and Services.</p>
+                  <p>Discover the Services and Amenities Offered Nearby.</p>
                 </div>
                 <div className="insightsRightInner">
                   <div className="blob blob1">
-                    <h2>Discover the Community</h2>
+                    <h2>Learn About the Community</h2>
                     <p>
-                      Efficiently narrow down property options using a wide
-                      range of search filters such as location, price range,
-                      property type, number of bedrooms, amenities, and more.
-                      Empower users to find properties that perfectly match
-                      their preferences.
+                      Learn about the locality and community lifestyle before
+                      buying/renting a property at your desired location. At
+                      Stound, we help you find not just a house but a place
+                      where your lifestyle thrives.
                     </p>
                   </div>
 
                   <div className="blob blob2">
-                    <h2>Explore the Surrounding Neighborhood </h2>
+                    <h2>Explore the Area Around You </h2>
                     <p>
-                      Create user accounts to enable personalized experiences.
-                      Users can save their search preferences, favorite
-                      properties, and receive alerts when new properties
-                      matching their criteria become available.
+                      Discover nearby properties and other essential amenities
+                      via advanced search functionality. Our detailed insights
+                      help you evaluate the convenience of the location,
+                      ensuring a seamless transition to your new home.
                     </p>
                   </div>
                 </div>
