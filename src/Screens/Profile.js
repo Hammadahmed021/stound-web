@@ -10,6 +10,7 @@ import { Footer } from "../Containers";
 import profileImg from "../Assets/Images/profile-img.png";
 import logo from "../Assets/Images/logoBlue.png";
 import userImg from "../Assets/Images/user.png";
+import axios from "axios";
 
 const customStyles = {
   content: {
@@ -32,15 +33,36 @@ const customStyles = {
 export default function Profile() {
   const navigate = useNavigate();
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpenDelete, setModalOpenDelete] = useState(false);
   const [userData, setUserData] = useState(null);
   const [user ] = useAuthState(auth);
-  
+  axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
+
+
+  const deleteAccount = async (e) => {
+    try {
+      const response = await axios.delete(`https://virtualrealitycreators.com/stound/api/auth/delete-user/${userData.uid}`);
+      console.log(response)
+      if(response.status == 200){
+        setModalOpenDelete(false)
+        logout();
+        setTimeout(() => {
+          navigate('/login')
+        }, 1000); 
+      }else{
+        alert(response.data.message);
+      }
+    } catch (error) {
+      alert(error)
+    } 
+  }
 
 
   const LogOutMain = (e) => {
     e.preventDefault();
     logout();
     setModalOpen(false)   
+    setModalOpenDelete(false)   
     setTimeout(() => {
       navigate('/login')
     }, 1000); 
@@ -48,18 +70,13 @@ export default function Profile() {
 
   const getData = async () => {
     let userlocal = await JSON.parse(localStorage.getItem("user"));
-    console.log("dd", userlocal)
     if(userlocal == undefined || userlocal == null ){
       return false
     }else{
       setUserData(userlocal)
       return true;
     }
-    console.log("profile",userlocal );
   }
-
-  // useLayoutEffect( getData, []);
-
 
   useEffect( () => {
     getData().then(response => {
@@ -69,20 +86,8 @@ export default function Profile() {
       }
 
     })
-   
-  
-    // return () => {   
-    // };
+     
   }, [])
-
-
-// useEffect(() => {
-//     if(user){
-//       navigate('/profile')
-//     }else{
-//       navigate('/login')
-//     }
-// },[])
 
 
   return (
@@ -146,9 +151,33 @@ export default function Profile() {
                 </span>
                 <span className="deactivate">
                   <span class="material-symbols-outlined">person_remove</span>
-                  <p>Deactivate Account</p>
+                  <p onClick={setModalOpenDelete}>Delete Account</p>
                 </span>
               </div>
+              <div className="Modal">
+                <Modal
+                  isOpen={modalOpenDelete}
+                  onRequestClose={() => setModalOpenDelete(false)}
+                  style={customStyles}
+                >
+                  <div className="modalDiv">
+                    <h2>Delete Account</h2>
+                    <p>Are you sure, you want to delete your account ?</p>
+                    <div className="d-flex align-items-center justify-content-around">
+                      <button
+                        className="cancel"
+                        onClick={() => setModalOpenDelete(false)}
+                      >
+                        Cancel
+                      </button>
+                      <button className="logoutBtn" onClick={deleteAccount}>
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </Modal>
+              </div>
+              
               <div className="Modal">
                 <Modal
                   isOpen={modalOpen}

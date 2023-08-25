@@ -146,7 +146,7 @@ export default function Login() {
                 <span className="emailWrap inputWrap">
                   <span class="material-symbols-outlined">mail</span>
                   <input
-                    placeholder="johnwick@gmail.com"
+                    placeholder="Example@email.com"
                     id="email-address"
                     name="email"
                     type="email"

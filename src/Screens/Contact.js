@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { Header, Footer } from "../Containers";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [fName, setFname] = useState("");
-
   const [errorM, setErrorM] = useState("");
+  const [successMsg, setsuccessMsg] = useState("");
+   
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {    
+      const response = await axios.post('https://virtualrealitycreators.com/stound/api/contact-email', {
+        fullname: fName,
+        email: email,
+        message: message
+      })
+      setsuccessMsg(response.data.success)      
+      console.log(response.data.success);
+    } catch (error) {
+      console.log(error.message);      
+    }
+  }
 
   return (
     <>
@@ -39,10 +56,11 @@ export default function Contact() {
             <div className="col-md-6 col-sm-12 pt-5">
               <div className="contactFormWrap">
                 <div className="contactForm">
+                <p className="">{successMsg}</p>      
                   <span className="fnameWrap inputWrap">
                     <span class="material-symbols-outlined">person</span>
                     <input
-                      placeholder="John wick"
+                      placeholder="Full Name"
                       id="full-name"
                       name="fname"
                       type="fname"
@@ -53,7 +71,7 @@ export default function Contact() {
                   <span className="emailWrap inputWrap">
                     <span class="material-symbols-outlined">mail</span>
                     <input
-                      placeholder="johnwick@gmail.com"
+                      placeholder="Email@email.com"
                       id="email-address"
                       name="email"
                       type="email"
@@ -66,7 +84,7 @@ export default function Contact() {
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="Your message"
+                      placeholder="Message"
                       onChange={(e) => setMessage(e.target.value)}
                     />
                   </span>
@@ -75,7 +93,7 @@ export default function Contact() {
                 <p className="error"> {errorM} </p>
                 <div className="submitWrap">
                   <Link to="">
-                    <button className="loginBtn" onClick={() => {}}>
+                    <button className="loginBtn" onClick={sendEmail}>
                       Submit
                     </button>
                   </Link>
